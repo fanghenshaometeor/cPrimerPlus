@@ -1,5 +1,9 @@
 So now I begin to learn c by myself using this book, cPrimerPlus(the fifth edition).
 
+I will try to conclude all the examples and exercises in the book.
+------------------------------------------------------------------
+What I want to say:
+
 I am really desired to improve my programming ability.
 
 What's more, I have already been left little time.
