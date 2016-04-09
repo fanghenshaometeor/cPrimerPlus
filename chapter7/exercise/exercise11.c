@@ -20,11 +20,14 @@ int main (void)
 	printf("Please enter character a, b or c:\n");
 	printf("(or enter q to quit)\n");
 	while (scanf("%c", &input) == 1) {
+		getchar();
 		if (input == 'q')	break;
 		switch (input) {
 			case 'a': pound1 = readinput('a'); break;
 			case 'b': pound2 = readinput('b'); break;
-			case 'c': pound3 = readinput('c'); break;			
+			case 'c': pound3 = readinput('c'); break;
+			default: printf("You are supposed to enter a, b or c.\n"); 
+				printf("Or q to quit.\nEnter again:");break;			
 		}
 	}
 
@@ -78,16 +81,19 @@ float readinput(char type)
 	if (type == 'a') {
 		printf("Enter the pounds of chaoxianji:\n");
 		scanf("%f", &pound);
+		getchar();
 		printf("Continue to enter b or c (q to quit):\n");
 	}
 	else if (type == 'b') {
 		printf("Enter the pounds of tiancai:\n");
 		scanf("%f", &pound);
+		getchar();
 		printf("Continue to enter a or c (q to quit):\n");
 	}
 	else if (type == 'c') {
 		printf("Enter the pounds of carrots:\n");
 		scanf("%f", &pound);
+		getchar();
 		printf("Continue to enter a or b (q to quit):\n");
 	}
 	return pound;
