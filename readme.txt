@@ -14,3 +14,15 @@ the best time to plant a tree is ten years ago,
 and the next is now.
 
 Just persist!
+------------------------------------------------------------------
+Attentions:
+
+From 2016.04.17 (yesterday), I will no longer use Linux,
+
+for the reasons that my visual machine runs too slowly and VS has a strong ability to 
+
+diaoshi codes.
+
+Now I use sublime to edit the codes and VS to run the codes.
+
+Wish you happy!
