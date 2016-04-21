@@ -8,6 +8,7 @@ int main (void)
 	printf ("Hi, what's your name?\n");
 	gets_s (name);			/* put the string into name array */
 	printf ("Nice name, %s.\n", name);
+	
 	system ("pause");
 	return 0;
 }
