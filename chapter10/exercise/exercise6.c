@@ -1,6 +1,8 @@
 /* exercise6.c */
 #include <stdio.h>
 #include <stdlib.h>
+#define ROWS 4
+#define COLS 5
 
 void copy_ptr(double s[], double *t, int n)
 {
@@ -9,11 +11,12 @@ void copy_ptr(double s[], double *t, int n)
 	{
 		*(t + index) = *(s + index);
 	}
+
+	return;
 }
 
 int main(void)
 {
-	const int ROWS = 4, COLS = 5;
 	double array[ROWS][COLS] = {
 		{ 1.2, 3.4, 5.6, 7.8, 9.10 },
 		{ 11.12, 13.14, 15.16, 17.18, 19.20 },
@@ -26,7 +29,7 @@ int main(void)
 
 	for (index = 0; index < ROWS; index++)
 	{
-		copy_ptr(*array + index, *array_copy + index, COLS);
+		copy_ptr(*(array + index), *(array_copy + index), COLS);
 	}
 
 	printf("Source array:\n");
