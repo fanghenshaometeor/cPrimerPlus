@@ -29,6 +29,5 @@ int main (int argc, char *argv[])
 	fclose(fp);
 	printf("File %s has %ld characters\n", argv[1], count);
 
-	system("pause");
 	return 0;
 }
