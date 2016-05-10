@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
 
 	while ((ch = getc(src)) != EOF)
 		putc(ch, cpy);
-
 	/* if (fclose(src) != 0)
 	{
 		fprintf(stderr, "Error closing file %s.\n", argv[1]);
