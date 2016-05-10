@@ -1,6 +1,7 @@
 /* exercise3.c */
 #define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 #define FILELEN 40
 
@@ -27,7 +28,10 @@ int main(void)
 	}
 
 	while ((ch = getc(src)) != EOF)
+	{
+		ch = toupper(ch);
 		putc(ch, cpy);
+	}
 
 	/* if (fclose(src) != 0)
 	{
