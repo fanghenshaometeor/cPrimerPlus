@@ -28,19 +28,20 @@ int main(int argc, char *argv[])
 
 	while ((ch = getc(src)) != EOF)
 		putc(ch, cpy);
-	/* if (fclose(src) != 0)
+	
+	if (fclose(src) != 0)
 	{
 		fprintf(stderr, "Error closing file %s.\n", argv[1]);
 		exit(1);
 	}
 
-	if (fclose(src) != 0)
+	if (fclose(cpy) != 0)
 	{
 		fprintf(stderr, "Error closing file %s.\n", argv[2]);
 		exit(1);
-	} */
+	}
 
-	fclose(src); fclose(cpy);
+	// fclose(src); fclose(cpy);
 
 	system("pause");
 	return 0;
