@@ -1,4 +1,5 @@
 /* booksave.c -- save the content of a struct to a file */
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #define MAXTITL 40
