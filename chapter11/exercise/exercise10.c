@@ -85,7 +85,7 @@ void choice_one(char *arr[], int length)
 
 void choice_two(char *arr[], int length)
 {
-	int i = 0, j = 0, temp = length + 1;
+	int i = 0, j = 0, temp = length;
 
 	for (i = 0; i < length - 1; i++)
 	{
@@ -107,7 +107,7 @@ void choice_two(char *arr[], int length)
 // todo: not ordered by length of strings
 void choice_three(char *arr[], int length)
 {
-	int element_length[MAX] = { 0 }, temp = length + 1, i = 0, j = 0;
+	int element_length[MAX + 1] = { 0 }, temp = length, i = 0, j = 0;
 
 	for (i = 0; i < length; i++)
 		element_length[i] = strlen(arr[i]);
@@ -120,6 +120,9 @@ void choice_three(char *arr[], int length)
 				arr[temp] = arr[i];
 				arr[i] = arr[j];
 				arr[j] = arr[temp];
+				element_length[temp] = element_length[i];
+				element_length[i] = element_length[j];
+				element_length[j] = element_length[temp];
 			}
 	}
 
